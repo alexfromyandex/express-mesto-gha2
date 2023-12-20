@@ -112,7 +112,7 @@ module.exports.login = async (req, res, next) => {
     maxAge: 3600000 * 24 * 7,
     httpOnly: true,
     sameSite: true,
-    secure: false,
+    secure: true,
   });
   res.send(foundUser);
 };
